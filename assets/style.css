@@ -224,3 +224,7 @@ footer { padding-block: 56px 48px; text-align: center; color: var(--muted); font
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+.highlights { margin: 0 0 12px; padding-left: 20px; display: grid; gap: 6px; }
+.highlights li::marker { color: var(--accent); }
+.item .meta + .summary { margin-top: 6px; }
