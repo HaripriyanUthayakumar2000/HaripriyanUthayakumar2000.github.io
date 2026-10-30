@@ -251,3 +251,5 @@ button.photo { padding: 0; border: 0; cursor: zoom-in; display: block; width: 10
   .gallery { grid-template-columns: 1fr 1fr; }
   #lightbox .lb-close { top: -44px; right: 0; }
 }
+.gallery-block + .gallery-block { margin-top: 32px; }
+.thumb.photo img { object-position: 50% 30%; }
