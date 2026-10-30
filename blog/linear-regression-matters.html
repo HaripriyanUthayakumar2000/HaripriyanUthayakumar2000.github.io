@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Why Simple Linear Regression Still Matters in the Age of Deep Learning · Haripriyan Uthayakumar</title>
+<meta name="description" content="Why the humble linear regression is still essential despite the rise of deep models.">
+<script>try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="navbar" aria-label="Main">
+  <div class="container">
+    <a class="brand" href="../index.html">Haripriyan Uthayakumar</a>
+    <div class="nav-links">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#publications">Publications</a>
+      <a class="active" href="../index.html#blogs">Blogs</a>
+      <a href="../index.html#cv">CV</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <button id="menu" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+<main class="section">
+  <div class="container">
+    <article class="article">
+      <a class="back" href="../index.html#blogs">← All posts</a>
+      <h1>Why Simple Linear Regression Still Matters in the Age of Deep Learning</h1>
+      <p class="byline">Haripriyan Uthayakumar · October 26, 2025</p>
+      <p>In today's world of artificial intelligence, terms like <em>transformers</em>, <em>deep neural networks</em> and <em>large language models</em> dominate headlines. Yet one of the oldest statistical tools, <strong>simple linear regression (SLR)</strong>, remains a cornerstone of data science education and applied analytics. It offers interpretability, robustness and a basic understanding of how variables relate, which complex models often obscure.</p>
+      <h3>What is simple linear regression?</h3>
+      <p>Simple linear regression models the relationship between a <strong>dependent variable (Y)</strong> and a <strong>single independent variable (X)</strong> with a straight line:</p>
+      <pre>Y = β₀ + β₁X + ε</pre>
+      <p>Here <strong>β₀</strong> is the intercept, <strong>β₁</strong> is the slope (rate of change) and <strong>ε</strong> is the error term.</p>
+      <h3>Why linear regression is still important</h3>
+      <h4>1. Interpretability and transparency</h4>
+      <p>Linear regression is <strong>directly interpretable</strong>: you can explain exactly how a change in one variable affects another. Deep learning models often act as black boxes and need extra tools such as SHAP or LIME to explain them after the fact.</p>
+      <p><strong>Example:</strong> in environmental science, knowing <em>how much a temperature rise affects vegetation growth</em> is more useful than a slightly lower prediction error from a neural network.</p>
+      <h4>2. The foundation of predictive modeling</h4>
+      <p>Most machine learning methods, from generalized linear models to neural networks, <strong>build on regression principles</strong>. Loss functions such as mean squared error, gradient descent and overfitting are all first met in linear regression.</p>
+      <h4>3. Efficiency and robustness</h4>
+      <p>Linear regression is <strong>computationally light</strong>, easy to implement and fast to train. On small datasets, or when the signal is linear, it often <strong>beats complex models</strong> that need heavy tuning and risk overfitting.</p>
+      <h4>4. Statistical significance and confidence</h4>
+      <p>Unlike most deep learning models, regression comes with <strong>statistical inference tools</strong> such as p-values, confidence intervals and R², so researchers can quantify uncertainty and judge which variables matter.</p>
+      <h4>5. A baseline for model evaluation</h4>
+      <p>In any data-driven workflow, linear regression is usually the <strong>first baseline model</strong>. If a deep learning model can't beat a well-tuned linear regression, revisit your features, data quality or assumptions.</p>
+      <h3>A balanced perspective</h3>
+      <p>Linear regression and deep learning are <strong>complementary tools</strong>. A strong data scientist knows when to favor interpretability and simplicity over predictive complexity. Insights from regression often guide feature engineering, which in turn improves deep learning pipelines.</p>
+      <h3>Conclusion</h3>
+      <p>Simple linear regression is a reminder that <strong>clarity often beats complexity</strong>. When models can write poetry and make art, the humble regression line still offers something many black-box models can't: <strong>understanding</strong>. Mastering it builds the intuition that underpins all of data science.</p>
+    </article>
+  </div>
+</main>
+<footer><div class="container">© <span id="yr">2026</span> Haripriyan Uthayakumar</div></footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>
