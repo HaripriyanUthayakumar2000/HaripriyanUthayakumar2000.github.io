@@ -56,3 +56,17 @@
 
 const yr = document.getElementById('yr');
 if (yr) yr.textContent = new Date().getFullYear();
+
+// Photo lightbox
+(() => {
+  const box = document.getElementById('lightbox');
+  if (!box) return;
+  const img = box.querySelector('img'), cap = box.querySelector('.lb-cap');
+  document.querySelectorAll('button.photo').forEach(btn => btn.addEventListener('click', () => {
+    img.src = btn.dataset.full; img.alt = btn.dataset.caption || '';
+    cap.textContent = btn.dataset.caption || '';
+    box.showModal();
+  }));
+  box.querySelector('.lb-close').addEventListener('click', () => box.close());
+  box.addEventListener('click', e => { if (e.target === box) box.close(); });
+})();
