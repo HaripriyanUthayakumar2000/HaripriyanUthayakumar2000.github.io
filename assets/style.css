@@ -228,3 +228,26 @@ footer { padding-block: 56px 48px; text-align: center; color: var(--muted); font
 .highlights { margin: 0 0 12px; padding-left: 20px; display: grid; gap: 6px; }
 .highlights li::marker { color: var(--accent); }
 .item .meta + .summary { margin-top: 6px; }
+
+/* ---------- Talk photos ---------- */
+button.photo { padding: 0; border: 0; cursor: zoom-in; display: block; width: 100%; }
+.thumb.photo img { object-fit: cover; }
+.gallery-block { padding-top: 8px; scroll-margin-top: 80px; }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.gallery .photo { aspect-ratio: 1; border-radius: 6px; overflow: hidden; background: var(--surface); }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.gallery .photo:hover img { transform: scale(1.05); }
+#lightbox {
+  border: 0; padding: 0; background: transparent; max-width: min(1100px, 94vw); max-height: 92vh; overflow: visible;
+}
+#lightbox::backdrop { background: rgba(0, 0, 0, .85); }
+#lightbox img { max-width: 100%; max-height: 82vh; border-radius: 6px; margin: 0 auto; }
+#lightbox .lb-cap { color: #e7e9ee; text-align: center; margin: 12px 0 0; font-size: 15px; }
+#lightbox .lb-close {
+  position: absolute; top: -14px; right: -14px; width: 36px; height: 36px; border-radius: 50%;
+  border: 0; background: #e7e9ee; color: #0f1115; font-size: 22px; line-height: 1; cursor: pointer;
+}
+@media (max-width: 600px) {
+  .gallery { grid-template-columns: 1fr 1fr; }
+  #lightbox .lb-close { top: -44px; right: 0; }
+}
