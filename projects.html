@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects · Haripriyan Uthayakumar</title>
+<meta name="description" content="Haripriyan Uthayakumar, PhD researcher at Purdue University working on AI, process systems engineering and sustainability for pharmaceutical manufacturing.">
+<script>try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%235aa9ff'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%230f1115'%3EHU%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=20261031025429">
+</head>
+<body>
+
+<nav class="navbar" aria-label="Main">
+  <div class="container">
+    <a class="brand" href="index.html">Haripriyan Uthayakumar</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active" aria-current="page">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="cv.html">CV</a>
+      <a href="others.html">Others</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button id="menu" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" id="projects">
+  <div class="container row">
+    <div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Research on sustainable, resilient pharmaceutical manufacturing</p>
+    </div>
+    <div class="items">
+      <article class="item no-thumb">
+        <div>
+          <h3>Agentic AI and Satellite-Informed Life Cycle Assessment for Pharmaceutical API Manufacturing <span class="status on">Ongoing</span></h3>
+          <p class="meta">2026 – Present</p>
+          <p class="summary">Automating life cycle assessment (LCA) and checking carbon footprints of pharmaceutical manufacturing against satellite data.</p>
+          <ul class="highlights">
+            <li>Multi-agent LLM workflow (LangGraph + RAG) that builds LCA inventories from Aspen Plus models and drafts ISO 14040/44-aligned interpretations for API synthesis routes.</li>
+            <li>Fuses satellite CO₂ and NO₂ observations (OCO-2/3, TROPOMI) with EPA facility-level GHG reporting to compare bottom-up and top-down emission estimates for U.S. pharmaceutical and chemical plants.</li>
+            <li>Extends the 47+ industry EW-MFA network to Scope 1–3 carbon footprints for API onshoring scenarios.</li>
+          </ul>
+          <p class="tags">Agentic AI · LLMs · LCA · Remote Sensing · Aspen Plus</p>
+        </div>
+      </article>
+      <article class="item no-thumb">
+        <div>
+          <h3>Process-Informed EW-MFA for Onshoring Acetaminophen API Manufacturing in the U.S. <span class="status on">Ongoing</span></h3>
+          <p class="meta">2025 – Present</p>
+          <p class="summary">Quantifying how changes in pharmaceutical demand cascade through the U.S. chemical manufacturing network.</p>
+          <ul class="highlights">
+            <li>Economy-wide material flow analysis (EW-MFA) coupled with physical input–output tables (PIOTs).</li>
+            <li>Aspen Plus models for 47+ process-level industries across key NAICS chemical sectors, linking unit-operation mass balances to national supply-chain flows.</li>
+            <li>Simulated onshoring scenarios from 0.8× to 2.0× current acetaminophen output, revealing nonlinear upstream cascades (AIChE 2026).</li>
+          </ul>
+          <p class="tags">Material Flow Analysis · Supply Chain Resilience · Aspen Plus · Process Systems Engineering</p>
+        </div>
+      </article>
+      <article class="item no-thumb">
+        <div>
+          <h3>Hybrid Physics-Informed ML for Real-Time Quality Control in Continuous API Manufacturing <span class="status on">Ongoing</span></h3>
+          <p class="meta">2025 – Present</p>
+          <p class="summary">A hybrid mechanistic and data-driven surrogate for Quality-by-Design control of continuous acetaminophen manufacturing.</p>
+          <ul class="highlights">
+            <li>Predicts 3 critical quality attributes (assay, dissolution, particle size) with ~97% accuracy.</li>
+            <li>Coupled with Aspen Plus to optimize operating parameters, cutting predicted batch-to-batch variability by ~35% and design iterations from days to minutes.</li>
+          </ul>
+          <p class="tags">Physics-Informed ML · Surrogate Modeling · Optimization · Quality by Design</p>
+        </div>
+      </article>
+      <article class="item no-thumb">
+        <div>
+          <h3>Hybrid Mechanistic Surrogates for Solvent Recovery Selection in Pharmaceutical Manufacturing <span class="status">Completed</span></h3>
+          <p class="meta">2023 – 2025 · MS thesis</p>
+          <p class="summary">A multi-scale framework to screen and rank solvent recovery technologies for pharmaceutical waste streams.</p>
+          <ul class="highlights">
+            <li>Integrates solvent chemistry, Aspen Plus process models and machine-learning surrogates.</li>
+            <li>Trained surrogates replace repeated rigorous simulations, speeding up comparison of recovery routes on process performance and sustainability.</li>
+          </ul>
+          <p class="tags">Machine Learning · Aspen Plus · Waste Valorization · Solvent Recovery</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<dialog id="lightbox" aria-label="Photo">
+  <button type="button" class="lb-close" aria-label="Close">×</button>
+  <img alt="">
+  <p class="lb-cap"></p>
+</dialog>
+
+<footer>
+  <div class="container">© <span id="yr">2026</span> Haripriyan Uthayakumar</div>
+</footer>
+
+<script src="assets/site.js?v=20261031025429"></script>
+</body>
+</html>

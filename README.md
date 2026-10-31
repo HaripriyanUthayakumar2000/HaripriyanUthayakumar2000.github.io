@@ -4,7 +4,8 @@ Live at https://hari007-2000.github.io/Haripriyan-Uthayakumar/
 
 Plain HTML/CSS, no build step.
 
-- `index.html` — the whole site (Home, Projects, Publications, Blogs, CV, Contact)
+- `index.html` — Home
+- `projects.html`, `publications.html`, `talks.html`, `blogs.html`, `cv.html`, `others.html`, `contact.html` — one page per tab
 - `blog/` — one HTML file per blog post
 - `assets/` — styles, script, photo and paper figures
 - Put your CV at `assets/cv.pdf` for the "Download full CV" button.

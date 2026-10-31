@@ -10,22 +10,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261031023500">
+<link rel="stylesheet" href="assets/style.css?v=20261031025429">
 </head>
 <body>
+<script>
+// Old one-page links (index.html#talks) now go to the matching page
+(function () { var p = { projects: 1, publications: 1, talks: 1, blogs: 1, cv: 1, others: 1, contact: 1 };
+  var h = location.hash.slice(1); if (p[h]) location.replace(h + '.html'); })();
+</script>
 
 <nav class="navbar" aria-label="Main">
   <div class="container">
-    <a class="brand" href="#home">Haripriyan Uthayakumar</a>
+    <a class="brand" href="index.html">Haripriyan Uthayakumar</a>
     <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#talks">Talks</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#cv">CV</a>
-      <a href="#others">Others</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="cv.html">CV</a>
+      <a href="others.html">Others</a>
+      <a href="contact.html">Contact</a>
     </div>
     <button id="menu" type="button" aria-label="Open menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -35,7 +40,6 @@
 
 <main>
 
-<!-- ============ HOME ============ -->
 <section class="section" id="home">
   <div class="container row">
     <div class="profile">
@@ -49,17 +53,17 @@
 
       <h2>Haripriyan Uthayakumar</h2>
       <p class="role">PhD Student @ Purdue University</p>
-      <p class="org"><a href="#blogs">Research Blog</a></p>
+      <p class="org"><a href="blogs.html">Research Blog</a></p>
 
       <div class="icons">
-        <a class="cv" href="#cv" title="CV" aria-label="CV">CV</a>
+        <a class="cv" href="cv.html" title="CV" aria-label="CV">CV</a>
         <a href="https://scholar.google.com/citations?user=K_mqgDwAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.92A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.42L24 9.5z"/></svg></a>
         <a href="https://github.com/Hari007-2000" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a>
         <a href="https://www.linkedin.com/in/haripriyan-uthayakumar-b885a01bb/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
-        <a href="#contact" title="Email" aria-label="Email">
+        <a href="contact.html" title="Email" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
       </div>
     </div>
@@ -68,7 +72,7 @@
       <h1>About Me</h1>
       <p>I'm a chemical and biological engineer and PhD researcher at <strong>Purdue University</strong>, working where <strong>pharmaceutical manufacturing, AI/ML, process systems engineering and sustainability</strong> meet. My goal is to connect molecules, processes and industrial networks to make pharmaceutical and chemical manufacturing more <strong>intelligent, resilient and sustainable</strong>.</p>
       <p>On the manufacturing side, I work on <strong>continuous manufacturing, digital twins, CMC automation and hybrid, physics-informed machine learning</strong>, using Aspen Plus, Python and cheminformatics tools such as RDKit and QSAR/QSPR models. On the sustainability side, I use <strong>life cycle assessment, techno-economic analysis, material flow analysis and physical input–output tables</strong> to study circularity, supply-chain resilience and onshoring.</p>
-      <p>I've authored 6 peer-reviewed publications and presented at AIChE, with research supported by an <strong>NSF Future Manufacturing Research Grant</strong>. If you're working on similar problems, I'd love to talk. Reach me by <a href="#contact">email</a> or on <a href="https://www.linkedin.com/in/haripriyan-uthayakumar-b885a01bb/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      <p>I've authored 6 peer-reviewed publications and presented at AIChE, with research supported by an <strong>NSF Future Manufacturing Research Grant</strong>. If you're working on similar problems, I'd love to talk. Reach me by <a href="contact.html">email</a> or on <a href="https://www.linkedin.com/in/haripriyan-uthayakumar-b885a01bb/" target="_blank" rel="noopener">LinkedIn</a>.</p>
 
       <figure class="overview">
         <button type="button" class="photo" data-full="assets/research-overview.png" data-caption="Research overview: from molecules to processes to manufacturing networks to ecosystems"><img src="assets/research-overview.png" alt="Research overview diagram. Process Systems Engineering (including Cheminformatics) overlaps with Industrial Ecology (including Ecology and Uncertainty Quantification). Where they meet sit AI/ML and Pharmaceutical Manufacturing, and at the center Sustainable and Resilient Manufacturing Systems. The scale runs from molecules to processes to manufacturing networks to ecosystems." loading="lazy"></button>
@@ -114,378 +118,6 @@
   </div>
 </section>
 
-<!-- ============ PROJECTS ============ -->
-<section class="section alt" id="projects">
-  <div class="container row">
-    <div>
-      <h2 class="section-title">Projects</h2>
-      <p class="section-sub">Research on sustainable, resilient pharmaceutical manufacturing</p>
-    </div>
-    <div class="items">
-      <article class="item no-thumb">
-        <div>
-          <h3>Agentic AI and Satellite-Informed Life Cycle Assessment for Pharmaceutical API Manufacturing <span class="status on">Ongoing</span></h3>
-          <p class="meta">2026 – Present</p>
-          <p class="summary">Automating life cycle assessment (LCA) and checking carbon footprints of pharmaceutical manufacturing against satellite data.</p>
-          <ul class="highlights">
-            <li>Multi-agent LLM workflow (LangGraph + RAG) that builds LCA inventories from Aspen Plus models and drafts ISO 14040/44-aligned interpretations for API synthesis routes.</li>
-            <li>Fuses satellite CO₂ and NO₂ observations (OCO-2/3, TROPOMI) with EPA facility-level GHG reporting to compare bottom-up and top-down emission estimates for U.S. pharmaceutical and chemical plants.</li>
-            <li>Extends the 47+ industry EW-MFA network to Scope 1–3 carbon footprints for API onshoring scenarios.</li>
-          </ul>
-          <p class="tags">Agentic AI · LLMs · LCA · Remote Sensing · Aspen Plus</p>
-        </div>
-      </article>
-      <article class="item no-thumb">
-        <div>
-          <h3>Process-Informed EW-MFA for Onshoring Acetaminophen API Manufacturing in the U.S. <span class="status on">Ongoing</span></h3>
-          <p class="meta">2025 – Present</p>
-          <p class="summary">Quantifying how changes in pharmaceutical demand cascade through the U.S. chemical manufacturing network.</p>
-          <ul class="highlights">
-            <li>Economy-wide material flow analysis (EW-MFA) coupled with physical input–output tables (PIOTs).</li>
-            <li>Aspen Plus models for 47+ process-level industries across key NAICS chemical sectors, linking unit-operation mass balances to national supply-chain flows.</li>
-            <li>Simulated onshoring scenarios from 0.8× to 2.0× current acetaminophen output, revealing nonlinear upstream cascades (AIChE 2026).</li>
-          </ul>
-          <p class="tags">Material Flow Analysis · Supply Chain Resilience · Aspen Plus · Process Systems Engineering</p>
-        </div>
-      </article>
-      <article class="item no-thumb">
-        <div>
-          <h3>Hybrid Physics-Informed ML for Real-Time Quality Control in Continuous API Manufacturing <span class="status on">Ongoing</span></h3>
-          <p class="meta">2025 – Present</p>
-          <p class="summary">A hybrid mechanistic and data-driven surrogate for Quality-by-Design control of continuous acetaminophen manufacturing.</p>
-          <ul class="highlights">
-            <li>Predicts 3 critical quality attributes (assay, dissolution, particle size) with ~97% accuracy.</li>
-            <li>Coupled with Aspen Plus to optimize operating parameters, cutting predicted batch-to-batch variability by ~35% and design iterations from days to minutes.</li>
-          </ul>
-          <p class="tags">Physics-Informed ML · Surrogate Modeling · Optimization · Quality by Design</p>
-        </div>
-      </article>
-      <article class="item no-thumb">
-        <div>
-          <h3>Hybrid Mechanistic Surrogates for Solvent Recovery Selection in Pharmaceutical Manufacturing <span class="status">Completed</span></h3>
-          <p class="meta">2023 – 2025 · MS thesis</p>
-          <p class="summary">A multi-scale framework to screen and rank solvent recovery technologies for pharmaceutical waste streams.</p>
-          <ul class="highlights">
-            <li>Integrates solvent chemistry, Aspen Plus process models and machine-learning surrogates.</li>
-            <li>Trained surrogates replace repeated rigorous simulations, speeding up comparison of recovery routes on process performance and sustainability.</li>
-          </ul>
-          <p class="tags">Machine Learning · Aspen Plus · Waste Valorization · Solvent Recovery</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PUBLICATIONS ============ -->
-<section class="section" id="publications">
-  <div class="container row">
-    <div>
-      <h2 class="section-title">Publications</h2>
-    </div>
-    <div>
-      <div class="callout">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-        <span>The full, up-to-date list is on <a href="https://scholar.google.com/citations?user=K_mqgDwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</span>
-      </div>
-      <div class="items">
-        <article class="item no-thumb">
-          <div>
-            <p class="pub-line"><svg class="doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg><a href="https://www.nature.com/articles/s41597-026-07199-y" target="_blank" rel="noopener">Network Connectivity-based Stream Classification for the Conterminous United States</a>. <em>Scientific Data</em>, 13, 1070, 2026.</p>
-            <p class="meta"><strong>Haripriyan Uthayakumar</strong>, Brandon K. Peoples, Julian D. Olden, Stephen Midway, Shweta Singh</p>
-            <div class="btns">
-              <a class="btn-o" href="https://doi.org/10.1038/s41597-026-07199-y" target="_blank" rel="noopener">DOI</a>
-              <a class="btn-o" href="https://www.nature.com/articles/s41597-026-07199-y" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </div>
-        </article>
-        <article class="item no-thumb">
-          <div>
-            <p class="pub-line"><svg class="doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg><a href="https://link.springer.com/article/10.1007/s41660-024-00391-w" target="_blank" rel="noopener">Shapley-Shubik Agents within Superstructure-Based Recycling Model: Circular Economy Approaches for Fish Waste Eco-Industrial Park</a>. <em>Process Integration and Optimization for Sustainability</em>, 2024.</p>
-            <p class="meta">A. S. T. Tan, <strong>Haripriyan Uthayakumar</strong>, et al.</p>
-            <div class="btns">
-              <a class="btn-o" href="https://doi.org/10.1007/s41660-024-00391-w" target="_blank" rel="noopener">DOI</a>
-              <a class="btn-o" href="https://link.springer.com/article/10.1007/s41660-024-00391-w" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </div>
-        </article>
-        <article class="item">
-          <div>
-            <p class="pub-line"><svg class="doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg><a href="https://doi.org/10.1021/acsengineeringau.3c00055" target="_blank" rel="noopener">QRChEM: A Deep Learning Framework for Materials Property Prediction and Design Using QR Codes</a>. <em>ACS Engineering Au</em>, 2023.</p>
-            <p class="meta">Encodes molecules as QR codes so deep learning can predict material properties quickly and accurately.</p>
-            <div class="btns">
-              <a class="btn-o" href="https://doi.org/10.1021/acsengineeringau.3c00055" target="_blank" rel="noopener">DOI</a>
-              <a class="btn-o" href="https://doi.org/10.1021/acsengineeringau.3c00055" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </div>
-          <div class="thumb"><img src="assets/qrchem.jpg" alt="QRChEM framework figure" loading="lazy"></div>
-        </article>
-        <article class="item">
-          <div>
-            <p class="pub-line"><svg class="doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg><a href="https://doi.org/10.1016/j.chphi.2023.100231" target="_blank" rel="noopener">Green Synthesis of Silver Nanoparticles: RSM-ANN-LM Hybrid Modeling</a>. <em>Chemical Physics Impact</em>, 2023.</p>
-            <p class="meta">Combines response surface methodology with neural networks to predict the size of green-synthesized silver nanoparticles.</p>
-            <div class="btns">
-              <a class="btn-o" href="https://doi.org/10.1016/j.chphi.2023.100231" target="_blank" rel="noopener">DOI</a>
-              <a class="btn-o" href="https://doi.org/10.1016/j.chphi.2023.100231" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </div>
-          <div class="thumb"><img src="assets/nanoparticles.jpg" alt="Silver nanoparticle synthesis figure" loading="lazy"></div>
-        </article>
-        <article class="item">
-          <div>
-            <p class="pub-line"><svg class="doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg><a href="https://doi.org/10.1007/s11356-022-19683-0" target="_blank" rel="noopener">Modeling of CO₂ Fixation by Microalgae Using Hybrid AI and Fuzzy Logic Methods</a>. <em>Environmental Science and Pollution Research</em>, 2022.</p>
-            <p class="meta">A hybrid of AI, fuzzy logic and genetic algorithms for optimizing carbon dioxide fixation by microalgae.</p>
-            <div class="btns">
-              <a class="btn-o" href="https://doi.org/10.1007/s11356-022-19683-0" target="_blank" rel="noopener">DOI</a>
-              <a class="btn-o" href="https://doi.org/10.1007/s11356-022-19683-0" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </div>
-          <div class="thumb"><img src="assets/microalgae.jpg" alt="Microalgae CO₂ fixation model surfaces" loading="lazy"></div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TALKS ============ -->
-<section class="section alt" id="talks">
-  <div class="container row">
-    <div>
-      <h2 class="section-title">Conferences &amp; Talks</h2>
-      <p class="section-sub">Presentations of my research at conferences</p>
-    </div>
-    <div class="items">
-      <article class="item talk">
-        <div>
-          <h3>Mechanistic-Models-Informed EW-MFA Framework for Onshoring and Cascading-Impact Analysis of Pharmaceutical Manufacturing in the United States</h3>
-          <p class="venue"><span class="venue-logo"><img src="assets/logos/aiche.png" alt="AIChE logo" style="height:20px;width:auto"></span>Talk · AIChE Annual Meeting · Minneapolis, MN</p>
-          <p class="who">Haripriyan Uthayakumar, Shweta Singh</p>
-          <p class="when">2026</p>
-          <div class="btns"><a class="btn-o" href="#projects">Related project</a></div>
-        </div>
-        <div class="thumb logo-thumb"><img src="assets/logos/aiche.png" alt="AIChE logo" loading="lazy"></div>
-      </article>
-      <article class="item talk">
-        <div>
-          <h3>Economy-Wide Material Flow Analysis for Pharmaceutical Manufacturing Resilience Using PIOT-Hub</h3>
-          <p class="venue"><span class="venue-logo"><img src="assets/logos/nsf.png" alt="National Science Foundation logo" style="height:20px;width:auto"></span>Workshop · Future Pharmaceutical Manufacturing and Supply Chains · Washington, D.C.</p>
-          <p class="who">Haripriyan Uthayakumar</p>
-          <p class="when">Sep 17–18, 2026</p>
-          <div class="btns"><a class="btn-o" href="#dc2026-photos">Photos</a></div>
-        </div>
-        <button class="thumb photo" type="button" data-full="assets/talks/dc2026-talk.jpg" data-caption="Presenting PIOT-Hub at the workshop in Washington, D.C.">
-          <img src="assets/talks/dc2026-talk.jpg" alt="Presenting PIOT-Hub at the workshop in Washington, D.C." loading="lazy">
-        </button>
-      </article>
-      <article class="item talk">
-        <div>
-          <h3>Economy-Wide Material Flow Analysis of U.S. Chemical Manufacturing Based on Process-Based Physical Input–Output Tables Using PIOT-Hub</h3>
-          <p class="venue"><span class="venue-logo"><img src="assets/logos/grc.png" alt="Gordon Research Conferences logo" style="height:20px;width:auto"></span>Poster · Gordon Research Conference on Industrial Ecology · Maine, USA</p>
-          <p class="who">Haripriyan Uthayakumar, Shweta Singh</p>
-          <p class="when">2026</p>
-          <div class="btns"><a class="btn-o" href="#grc2026-photos">Photos</a></div>
-        </div>
-        <button class="thumb photo" type="button" data-full="assets/talks/grc2026-poster.jpg" data-caption="With my poster at the Gordon Research Conference on Industrial Ecology 2026">
-          <img src="assets/talks/grc2026-poster.jpg" alt="With my poster at the Gordon Research Conference on Industrial Ecology 2026" loading="lazy">
-        </button>
-      </article>
-      <article class="item talk">
-        <div>
-          <h3>Mapping the US Chemical Economy: Automating Material Flow Analysis Using PIOT-Hub</h3>
-          <p class="venue"><span class="venue-logo"><img src="assets/logos/aiche.png" alt="AIChE logo" style="height:20px;width:auto"></span>Talk · AIChE Annual Meeting, Session 373c · Boston, MA</p>
-          <p class="who">Haripriyan Uthayakumar, Shweta Singh</p>
-          <p class="when">Nov 2025</p>
-          <div class="btns"><a class="btn-o" href="#aiche2025-photos">Photos</a></div>
-        </div>
-        <button class="thumb photo" type="button" data-full="assets/talks/aiche2025-talk.jpg" data-caption="Presenting PIOT-Hub at AIChE 2025, Boston">
-          <img src="assets/talks/aiche2025-talk.jpg" alt="Presenting PIOT-Hub at AIChE 2025, Boston" loading="lazy">
-        </button>
-      </article>
-      <article class="item talk">
-        <div>
-          <h3>Chemistry-Driven Industrial Symbiosis for Implementing Circular Economy in the Emerging Pharmaceutical Industries</h3>
-          <p class="venue"><span class="venue-logo"><img src="assets/logos/aiche.png" alt="AIChE logo" style="height:20px;width:auto"></span>Talk · AIChE Annual Meeting · Boston, MA</p>
-          <p class="who">Haripriyan Uthayakumar, Shweta Singh</p>
-          <p class="when">Nov 2025</p>
-          
-        </div>
-        <div class="thumb logo-thumb"><img src="assets/logos/aiche.png" alt="AIChE logo" loading="lazy"></div>
-      </article>
-      <article class="item talk">
-        <div>
-          <h3>Modeling Stream Network Biodiversity Loss: Assessing Anthropogenic Impacts on Freshwater Ecosystems</h3>
-          <p class="venue"><span class="venue-logo"><img src="assets/logos/isie.png" alt="International Society for Industrial Ecology logo" style="height:20px;width:auto"></span>Talk · 12th International Conference on Industrial Ecology (ISIE 2025) · National University of Singapore</p>
-          <p class="who">Haripriyan Uthayakumar, Brandon Peoples, Shweta Singh</p>
-          <p class="when">Jul 2025</p>
-        </div>
-        <button class="thumb photo" type="button" data-full="assets/talks/isie2025-banner.jpg" data-caption="12th International Conference on Industrial Ecology, ISIE 2025, Singapore">
-          <img class="fit" src="assets/talks/isie2025-banner.jpg" alt="ISIE 2025 Singapore conference banner" loading="lazy">
-        </button>
-      </article>
-      <article class="item talk">
-        <div>
-          <h3>Chemistry-Driven Design of Industrial Symbiosis for Implementing Circular Economy in Emerging Pharmaceutical Industries</h3>
-          <p class="venue"><span class="venue-logo"><img src="assets/logos/isie.png" alt="International Society for Industrial Ecology logo" style="height:20px;width:auto"></span>Talk · 12th International Conference on Industrial Ecology (ISIE 2025) · National University of Singapore</p>
-          <p class="who">Haripriyan Uthayakumar, Shweta Singh</p>
-          <p class="when">Jul 2025</p>
-        </div>
-        <div class="thumb logo-thumb"><img src="assets/logos/isie.png" alt="International Society for Industrial Ecology logo" loading="lazy"></div>
-      </article>
-
-
-      <div class="gallery-block" id="dc2026-photos">
-        <h3 class="h-sub">Pharma Manufacturing &amp; Supply Chains Workshop 2026 · Washington, D.C.</h3>
-        <div class="gallery g5">
-          <button type="button" class="photo" data-full="assets/talks/dc2026-talk.jpg" data-caption="Presenting physical input–output tables (PIOT)"><img src="assets/talks/dc2026-talk.jpg" alt="Presenting at the workshop" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/dc2026-duo.jpg" data-caption="At the workshop in Washington, D.C."><img src="assets/talks/dc2026-duo.jpg" alt="Haripriyan beside the workshop title screen" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/dc2026-group.jpg" data-caption="With workshop participants"><img src="assets/talks/dc2026-group.jpg" alt="Group photo of workshop participants" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/dc2026-group2.jpg" data-caption="With workshop participants"><img src="assets/talks/dc2026-group2.jpg" alt="Second group photo of workshop participants" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/dc2026-panel.jpg" data-caption="Panel discussion with experts from academia, industry and government"><img src="assets/talks/dc2026-panel.jpg" alt="Panel discussion at the workshop" loading="lazy"></button>
-        </div>
-      </div>
-      <div class="gallery-block" id="grc2026-photos">
-        <h3 class="h-sub">GRC Industrial Ecology 2026 · Maine</h3>
-        <div class="gallery">
-          <button type="button" class="photo" data-full="assets/talks/grc2026-poster.jpg" data-caption="Presenting my PIOT-Hub poster"><img src="assets/talks/grc2026-poster.jpg" alt="With the poster at GRC 2026" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/grc2026-group.jpg" data-caption="With fellow attendees at the conference"><img src="assets/talks/grc2026-group.jpg" alt="Group photo at GRC 2026" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/grc2026-lodge.jpg" data-caption="Between sessions at the conference venue"><img src="assets/talks/grc2026-lodge.jpg" alt="Group photo by the fireplace at the GRC 2026 venue" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/grc2026-hike.jpg" data-caption="Exploring Maine with fellow attendees"><img src="assets/talks/grc2026-hike.jpg" alt="Group selfie at a waterfall in Maine" loading="lazy"></button>
-        </div>
-      </div>
-      <div class="gallery-block" id="aiche2025-photos">
-        <h3 class="h-sub">AIChE 2025 · Boston</h3>
-        <div class="gallery">
-          <button type="button" class="photo" data-full="assets/talks/aiche2025-talk.jpg" data-caption="Presenting “Mapping the US Chemical Economy” at the Marriott Boston Copley Place"><img src="assets/talks/aiche2025-talk.jpg" alt="Presenting at AIChE 2025" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/aiche2025-podium.jpg" data-caption="At the podium during the session"><img src="assets/talks/aiche2025-podium.jpg" alt="At the podium at AIChE 2025" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/aiche2025-group.jpg" data-caption="With colleagues at the AIChE 2025 exhibit hall"><img src="assets/talks/aiche2025-group.jpg" alt="Group photo at the AIChE 2025 exhibit hall" loading="lazy"></button>
-          <button type="button" class="photo" data-full="assets/talks/aiche2025-boston.jpg" data-caption="With the group at the Prudential Center, Boston"><img src="assets/talks/aiche2025-boston.jpg" alt="Group photo at the Prudential Center in Boston" loading="lazy"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BLOGS ============ -->
-<section class="section" id="blogs">
-  <div class="container row">
-    <div>
-      <h2 class="section-title">Blogs</h2>
-      <p class="section-sub">Notes on AI, sustainability and data science</p>
-    </div>
-    <div class="items">
-      <article class="item no-thumb">
-        <div>
-          <h3><a href="blog/linear-regression-matters.html">Why Simple Linear Regression Still Matters in the Age of Deep Learning</a></h3>
-          <p class="summary">Why the humble linear regression is still essential despite the rise of deep models.</p>
-          <p class="meta"><strong>Haripriyan Uthayakumar</strong><br>Oct 26, 2025</p>
-          <div class="btns"><a class="btn-o" href="blog/linear-regression-matters.html">Read</a></div>
-        </div>
-      </article>
-      <article class="item no-thumb">
-        <div>
-          <h3><a href="blog/ai-bio-manufacturing.html">The Convergence of AI and Sustainable Bio-Manufacturing</a></h3>
-          <p class="summary">How AI, chemistry, biology and environmental science combine to make bio-manufacturing sustainable.</p>
-          <p class="meta"><strong>Haripriyan Uthayakumar</strong><br>Oct 4, 2025</p>
-          <div class="btns"><a class="btn-o" href="blog/ai-bio-manufacturing.html">Read</a></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CV ============ -->
-<section class="section alt" id="cv">
-  <div class="container row">
-    <div>
-      <h2 class="section-title">CV</h2>
-      <p class="section-sub">Skills, awards and a downloadable copy</p>
-    </div>
-    <div>
-      <h3 class="h-sub">Technical Skills</h3>
-      <div class="skills">
-        <div><h4>Bio-Process Engineering</h4><p>Process design, scale-up, optimization, sustainable manufacturing</p></div>
-        <div><h4>Artificial Intelligence</h4><p>Machine learning, deep learning, process optimization, data analytics</p></div>
-        <div><h4>Chemical Engineering</h4><p>Process control, unit operations, reaction engineering</p></div>
-        <div><h4>Software &amp; Tools</h4><p>Python, MATLAB, Aspen Plus, COMSOL, TensorFlow</p></div>
-      </div>
-
-      <h3 class="h-sub" style="margin-top:48px">Awards &amp; Honors</h3>
-      <ul class="ul-icons">
-        <li>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a6 6 0 0 1 3.6 10.8L17 22l-5-3-5 3 1.4-9.2A6 6 0 0 1 12 2z"/></svg>
-          <div><span class="t">Graduate Research Excellence Award</span><span class="m">Purdue University · 2023</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a6 6 0 0 1 3.6 10.8L17 22l-5-3-5 3 1.4-9.2A6 6 0 0 1 12 2z"/></svg>
-          <div><span class="t">Outstanding Research Paper Award</span><span class="m">Department of Bio-Engineering · 2022</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a6 6 0 0 1 3.6 10.8L17 22l-5-3-5 3 1.4-9.2A6 6 0 0 1 12 2z"/></svg>
-          <div><span class="t">Academic Excellence Award</span><span class="m">Anna University · 2020</span></div>
-        </li>
-      </ul>
-
-      <!-- ✏️ Add your CV as assets/cv.pdf and this button will work -->
-      <div class="btns" style="margin-top:40px"><a class="btn-solid" href="assets/cv.pdf" target="_blank" rel="noopener">Download full CV (PDF)</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ OTHERS ============ -->
-<section class="section" id="others">
-  <div class="container row">
-    <div>
-      <h2 class="section-title">Others</h2>
-      <p class="section-sub">Life outside the lab</p>
-    </div>
-    <div>
-      <h3 class="h-sub">Fishing</h3>
-      <div class="prose-block">
-        <p>When I'm not building process models, there's a good chance I'm out by the water with a fishing rod. Fishing is how I slow down and reset: a quiet bank, a line in the water, and the small thrill when something finally bites.</p>
-        <p>Most of my trips are with my labmate and good friend <strong>William Farlessyost</strong>. We head out to local lakes and ponds whenever we get the chance, trade tips on bait and casting, and celebrate every catch, however small.</p>
-        <p>It also connects back to my research. I've worked on stream networks and freshwater biodiversity, and spending time on the water is a good reminder of the ecosystems that work is meant to protect.</p>
-      </div>
-      <div class="gallery g2">
-        <button type="button" class="photo" data-full="assets/others/fishing-william.jpg" data-caption="Fishing with my labmate and friend William Farlessyost"><img src="assets/others/fishing-william.jpg" alt="Haripriyan and William Farlessyost holding up the fish they caught" loading="lazy"></button>
-        <button type="button" class="photo" data-full="assets/others/fishing-catch.jpg" data-caption="A small catch on a sunny afternoon"><img src="assets/others/fishing-catch.jpg" alt="Haripriyan holding a small fish and a fishing rod by a path" loading="lazy"></button>
-      </div>
-      <h3 class="h-sub" style="margin-top:48px">Tennis</h3>
-      <div class="prose-block">
-        <p>Tennis is my other favorite way to unwind. I've played a lot of it with my friends <strong>Abhimanyu Rajshekhar</strong> and <strong>William Farlessyost</strong>, and I really enjoy it: long rallies, friendly competition and plenty of laughs on court.</p>
-      </div>
-      <div class="gallery g2">
-        <button type="button" class="photo" data-full="assets/others/tennis-courts.jpg" data-caption="At the Purdue tennis courts"><img src="assets/others/tennis-courts.jpg" alt="Haripriyan holding a tennis racket at Purdue's indoor tennis courts" loading="lazy"></button>
-        <button type="button" class="photo" data-full="assets/others/tennis-friends.jpg" data-caption="After a game with Abhimanyu Rajshekhar and William Farlessyost"><img src="assets/others/tennis-friends.jpg" alt="Haripriyan with two friends on an indoor tennis court" loading="lazy"></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section alt" id="contact">
-  <div class="container row">
-    <div>
-      <h2 class="section-title">Contact</h2>
-    </div>
-    <div>
-      <p style="margin:0">Interested in a collaboration or have a question about my research? I'd be glad to hear from you.</p>
-      <ul class="contact-list">
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
-          <div class="email-row"><a id="mail" href="mailto:huthayak@purdue.edu">huthayak@purdue.edu</a><button class="btn-o" id="copy" type="button">Copy</button></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <span>Purdue University, West Lafayette, Indiana, USA</span>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
-          <a href="https://www.linkedin.com/in/haripriyan-uthayakumar-b885a01bb/" target="_blank" rel="noopener">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <dialog id="lightbox" aria-label="Photo">
@@ -498,6 +130,6 @@
   <div class="container">© <span id="yr">2026</span> Haripriyan Uthayakumar</div>
 </footer>
 
-<script src="assets/site.js?v=20261031023500"></script>
+<script src="assets/site.js?v=20261031025429"></script>
 </body>
 </html>

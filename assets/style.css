@@ -295,3 +295,7 @@ button.photo { padding: 0; border: 0; cursor: zoom-in; display: block; width: 10
 .prose-block p { margin: 0 0 14px; }
 .gallery.g2 { grid-template-columns: repeat(2, minmax(0, 220px)); margin-top: 22px; }
 .gallery.g2 .photo { aspect-ratio: 3 / 4; }
+
+/* ---------- One tab per page: keep the footer at the bottom of short pages ---------- */
+body { min-height: 100vh; display: flex; flex-direction: column; }
+body > main { flex: 1 0 auto; }
