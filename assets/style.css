@@ -288,3 +288,4 @@ button.photo { padding: 0; border: 0; cursor: zoom-in; display: block; width: 10
   .item.talk .logo-thumb { display: none; }
   .item.talk h3 { font-size: 21px; }
 }
+.thumb.photo img.fit { object-fit: contain; background: #1f2a20; }
