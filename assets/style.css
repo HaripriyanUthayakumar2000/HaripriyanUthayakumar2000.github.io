@@ -261,3 +261,9 @@ button.photo { padding: 0; border: 0; cursor: zoom-in; display: block; width: 10
   box-shadow: 0 0 0 1px var(--line);
 }
 .logo-tile img { max-width: 100%; max-height: 100%; width: auto; height: auto; }
+
+/* ---------- Research overview figure ---------- */
+.overview { margin: 36px 0 0; background: #fff; border-radius: 10px; padding: 8px; box-shadow: 0 0 0 1px var(--line); }
+.overview img { width: 100%; height: auto; border-radius: 6px; }
+.overview .photo { background: transparent; }
+#lightbox img[src$="research-overview.png"] { background: #fff; }
