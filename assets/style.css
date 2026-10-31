@@ -300,3 +300,12 @@ button.photo { padding: 0; border: 0; cursor: zoom-in; display: block; width: 10
 body { min-height: 100vh; display: flex; flex-direction: column; }
 body > main { flex: 1 0 auto; }
 .btn-o.lg { font: 500 16px/1 var(--body); padding: 12px 16px; border-radius: 6px; }
+
+/* ---------- Publications list ---------- */
+.pub-group { margin: 52px 0 22px; display: flex; align-items: baseline; gap: 10px; }
+.pub-group .count { font: 500 13px/1 var(--body); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 8px; }
+.item.pub .pub-line { font-size: 16px; line-height: 1.5; margin-bottom: 4px; }
+.item.pub .venue-line { margin: 0 0 2px; font-size: 14px; color: var(--fg); }
+.item.pub .meta { font-size: 14px; }
+.item.pub .meta strong { color: var(--fg); }
+.item.pub .btns { margin-top: 10px; }
