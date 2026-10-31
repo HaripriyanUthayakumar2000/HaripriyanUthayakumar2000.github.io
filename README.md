@@ -1,6 +1,6 @@
 # Haripriyan Uthayakumar — personal website
 
-Live at https://hari007-2000.github.io/Haripriyan-Uthayakumar/
+Live at https://haripriyan2000.github.io/
 
 Plain HTML/CSS, no build step.
 
