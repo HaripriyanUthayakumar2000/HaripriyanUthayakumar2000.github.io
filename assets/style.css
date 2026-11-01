@@ -319,3 +319,6 @@ body > main { flex: 1 0 auto; }
 .person p { margin: 6px 0 0 25px; color: var(--muted); font-size: 14px; line-height: 1.55; }
 @media (max-width: 900px) { .people { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 480px) { .people { grid-template-columns: 1fr; } }
+.person .person-line { display: flex; align-items: center; gap: 7px; margin: 5px 0 0 25px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.person .person-line svg { width: 14px; height: 14px; flex: none; opacity: .8; }
+.person .person-name + .person-line { margin-top: 8px; }
